@@ -4,7 +4,7 @@ const port = 3000;
 
 // Define a route
 app.get('/', (req, res) => {
-    res.send('Hello, World! This is a simple Node.js app. Testing the jenkins job pipeline.');
+    res.send('Hello, World! This is my first Node.js app.');
 });
 
 // Start the server
