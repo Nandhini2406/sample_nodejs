@@ -1,3 +1,3 @@
 # sample_nodejs
 @Created for jenkins pipeline testing
-* is checked
+* For testing purpose there are a lot of commits!
