@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-// Define a route
+// Define a base route
 app.get('/', (req, res) => {
     res.send('Hello, World! This is my first Node.js app.');
 });
