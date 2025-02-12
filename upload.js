@@ -19,7 +19,7 @@ const router = express().router;
 const upload = multer({ dest: 'uploads/' }).single('file');
 
 // Route for file upload
-router.post('/upload', (req, res) => {
+router.post('/uploads', (req, res) => {
     upload(req, res, function (err) {
         if (err instanceof multer.MulterError) {
             // A Multer error occurred when uploading.
