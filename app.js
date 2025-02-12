@@ -10,14 +10,14 @@ app.get('/', (req, res) => {
     res.json('Hello, World! This is my first Node.js app. Testing the pipeline!');
 });
 
-const job = CronJob.from({
-	cronTime: '* * * * *',
-	onTick: function () {
-        console.log('You will see this message every minute');
-	},
-	start: true,
-	timeZone: 'America/Los_Angeles'
-});
+// const job = CronJob.from({
+// 	cronTime: '* * * * *',
+// 	onTick: function () {
+//         console.log('You will see this message every minute');
+// 	},
+// 	start: true,
+// 	timeZone: 'America/Los_Angeles'
+// });
 
 // Start the server
 app.listen(port, () => {
