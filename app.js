@@ -8,11 +8,15 @@ app.use(bodyParser.json());
 // Define a base route
 app.get('/', (req, res) => {
     res.json('Hello, World! This is my first Node.js app. This changes is triggered by push event. I think Finally its working.');
+    res.json('will this response be sent?');
 });
+// a cron job tosent a msg  in response for every minute
+
+
 const job = CronJob.from({
 	cronTime: '* * * * *',
 	onTick: function () {
-		res.json('You will see this message every minute');
+        console.log('You will see this message every minute');
 	},
 	start: true,
 	timeZone: 'America/Los_Angeles'
@@ -20,5 +24,5 @@ const job = CronJob.from({
 
 // Start the server
 app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port} is tested`);
+    console.log(`Server is running at http://localhost:${port}`);
 });
