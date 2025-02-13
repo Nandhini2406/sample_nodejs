@@ -7,7 +7,7 @@ Created for jenkins pipeline for this project.
 * If there is changes in package.json then the pipeline will run 'npm install'.
 * After the pulling the changes and dependencies changes, it will restart pm2 app.
 * Now this pipeline also send a notification of the job status to telegram chat bot.
-
+* Even if the build is failed or succeed it will send the notification.
 
 * For testing purpose there are a lot of commits!
 
