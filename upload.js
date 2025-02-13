@@ -5,7 +5,6 @@ const request = require('request');
 
 const router = express().router;
 
-
 // // Middleware to parse multipart/form-data
 // const storage = multer.diskStorage({
 //     destination: function (req, file, cb) {
@@ -23,11 +22,11 @@ router.post('/uploads', (req, res) => {
     upload(req, res, function (err) {
         if (err instanceof multer.MulterError) {
             // A Multer error occurred when uploading.
-            console.error('Multer Error:', err);
+            console.error('Multer Error :', err);
             return res.status(500).send('File upload failed.');
         } else if (err) {
             // An unknown error occurred when uploading.
-            console.error('Unknown Error:', err);
+            console.error('Unknown Error :', err);
             return res.status(500).send('File upload failed.');
         }
 
@@ -37,7 +36,7 @@ router.post('/uploads', (req, res) => {
 
         // Check if a file was uploaded
         if (!file) {
-            console.log('No file uploaded');
+            console.log('No files uploaded');
             return res.status(400).send('No file uploaded.');
         }
 
