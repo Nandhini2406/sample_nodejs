@@ -7,7 +7,7 @@ const port = 3000;
 app.use(bodyParser.json());
 // Define a base route
 app.get('/', (req, res) => {
-    res.json('Hello, World! This is my first Node.js app. Testing the pipeline! The status of the pipeline will be sent to a telegram notification');
+    res.json('Hello, World! This is my first Node.js app. Testing the pipeline! The status of the pipeline will be sent to a telegram notification. Something is going wrong');
 });
 
 // const job = CronJob.from({
